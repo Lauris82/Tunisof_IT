@@ -8,65 +8,65 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.AfficheDetailEvenementController">
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.AfficheDetailEvenementController">
    <children>
-      <Label fx:id="nom" layoutX="172.0" layoutY="65.0" prefHeight="17.0" prefWidth="420.0" text="Label" />
-      <Label fx:id="description" contentDisplay="CENTER" layoutX="175.0" layoutY="237.0" prefHeight="25.0" prefWidth="389.0" text="Label" />
-      <Label fx:id="dateDebut" layoutX="172.0" layoutY="105.0" text="Label" />
-      <Label fx:id="dateFin" layoutX="172.0" layoutY="149.0" text="Label" />
-      <Label fx:id="emplacement" layoutX="174.0" layoutY="196.0" text="Label" />
-      <ImageView fx:id="image" fitHeight="48.0" fitWidth="74.0" layoutX="362.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fill="#150c35" layoutX="156.0" layoutY="46.0" strokeType="INSIDE" strokeWidth="0.0" text="Dètail du l'èvénement">
+      <Label fx:id="nom" layoutX="179.0" layoutY="70.0" prefHeight="17.0" prefWidth="420.0" text="Label" />
+      <Label fx:id="description" contentDisplay="CENTER" layoutX="182.0" layoutY="282.0" prefHeight="25.0" prefWidth="389.0" text="Label" />
+      <Label fx:id="dateDebut" layoutX="179.0" layoutY="117.0" text="Label" />
+      <Label fx:id="dateFin" layoutX="179.0" layoutY="172.0" text="Label" />
+      <Label fx:id="emplacement" layoutX="181.0" layoutY="229.0" text="Label" />
+      <ImageView fx:id="image" fitHeight="135.0" fitWidth="229.0" layoutX="362.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#150c35" layoutX="200.0" layoutY="48.0" strokeType="INSIDE" strokeWidth="0.0" text="Dètail du l'èvénement">
          <font>
             <Font name="Bodoni MT" size="30.0" />
          </font>
       </Text>
-      <Label layoutX="20.0" layoutY="60.0" text="Nom :" textFill="#0bc9e3">
+      <Label layoutX="27.0" layoutY="65.0" text="Nom :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="17.0" layoutY="99.0" text="Date dèbut :" textFill="#0bc9e3">
+      <Label layoutX="24.0" layoutY="111.0" text="Date dèbut :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="16.0" layoutY="143.0" text="Date fin :" textFill="#0bc9e3">
+      <Label layoutX="23.0" layoutY="166.0" text="Date fin :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="233.0" text="Description :" textFill="#0bc9e3">
+      <Label layoutX="21.0" layoutY="278.0" text="Description :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="15.0" layoutY="189.0" text="Emplacement :" textFill="#0bc9e3">
+      <Label layoutX="22.0" layoutY="222.0" text="Emplacement :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="fb" layoutX="284.0" layoutY="354.0" onAction="#partage" prefHeight="31.0" prefWidth="85.0" text="Partage" textFill="#150c35">
+      <JFXButton fx:id="fb" layoutX="297.0" layoutY="495.0" onAction="#partage" prefHeight="31.0" prefWidth="85.0" text="Partage" textFill="#150c35">
          <font>
             <Font size="15.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="262.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="275.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/circle-facebook_icon-icons.com_66834.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="retour" layoutX="14.0" layoutY="339.0" onAction="#retourListEvenement" prefHeight="54.0" prefWidth="145.0" text="   Retour" textFill="#150c35" wrapText="true">
+      <JFXButton fx:id="retour" layoutX="22.0" layoutY="484.0" onAction="#retourListEvenement" prefHeight="54.0" prefWidth="145.0" text="   Retour" textFill="#150c35" wrapText="true">
          <font>
             <Font size="25.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="21.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="29.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/back.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="membres" layoutX="451.0" layoutY="352.0" onAction="#afficherMembresEvenement" prefHeight="36.0" prefWidth="144.0" text="Voir membres" textFill="#150c35">
+      <JFXButton fx:id="membres" layoutX="469.0" layoutY="490.0" onAction="#afficherMembresEvenement" prefHeight="36.0" prefWidth="144.0" text="Voir membres" textFill="#150c35">
          <font>
             <Font size="15.0" />
          </font>
@@ -78,11 +78,11 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton fx:id="res" layoutX="248.0" layoutY="280.0" onAction="#reservationEvenement" prefHeight="56.0" prefWidth="303.0" ripplerFill="#ee1c23" style="-fx-background-color: #ee1c23;" text="Button" textFill="#140601">
+      <JFXButton fx:id="res" layoutX="188.0" layoutY="414.0" onAction="#reservationEvenement" prefHeight="56.0" prefWidth="303.0" ripplerFill="#ee1c23" style="-fx-background-color: #ee1c23;" text="Button" textFill="#140601">
          <font>
             <Font size="26.0" />
          </font></JFXButton>
-      <JFXButton fx:id="supprimer" layoutX="119.0" layoutY="308.0" onAction="#supprimerEvenement" text="Supprimer" textFill="#150c35">
+      <JFXButton fx:id="supprimer" layoutX="116.0" layoutY="425.0" onAction="#supprimerEvenement" text="Supprimer" textFill="#150c35">
          <font>
             <Font size="18.0" />
          </font>
@@ -94,7 +94,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton fx:id="modifier" layoutX="358.0" layoutY="309.0" onAction="#modifierEvenement" text="Modifier" textFill="#150c35">
+      <JFXButton fx:id="modifier" layoutX="365.0" layoutY="425.0" onAction="#modifierEvenement" text="Modifier" textFill="#150c35">
          <font>
             <Font size="18.0" />
          </font>
@@ -106,11 +106,11 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <Label layoutX="16.0" layoutY="278.0" text="Nbr places dispo :" textFill="#0bc9e3">
+      <Label layoutX="23.0" layoutY="333.0" text="Nbr places dispo :" textFill="#0bc9e3">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="nbrPlaces" layoutX="174.0" layoutY="283.0" text="Label" />
+      <Label fx:id="nbrPlaces" layoutX="181.0" layoutY="338.0" text="Label" />
    </children>
 </AnchorPane>

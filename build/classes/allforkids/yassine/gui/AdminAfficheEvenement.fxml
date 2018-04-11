@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="831.0" prefWidth="945.0" stylesheets="@../../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.AdminAfficheEvenementController">
+<AnchorPane id="AnchorPane" prefHeight="691.0" prefWidth="818.0" stylesheets="@../../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.AdminAfficheEvenementController">
    <children>
-      <TableView fx:id="table" layoutX="87.0" layoutY="120.0" prefHeight="592.0" prefWidth="772.0">
+      <TableView fx:id="table" layoutX="87.0" layoutY="120.0" prefHeight="566.0" prefWidth="731.0">
          <columns>
             <TableColumn fx:id="umgUsr" prefWidth="96.0" text="Image user" />
             <TableColumn fx:id="nomUsr" prefWidth="81.0" text="Nom user" />

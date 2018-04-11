@@ -234,6 +234,7 @@ public class ListEvenementController implements Initializable {
             Scene scene=new Scene(root);
             Stage s=new Stage();
             s.setScene(scene);
+            s.setHeight(750);
             s.show();
             // table.getScene().setRoot(root); 
     }

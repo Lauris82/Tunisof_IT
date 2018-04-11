@@ -98,7 +98,7 @@ public String fileName ;
         BufferedOutputStream stream = null;
         BufferedOutputStream stream2 = null;
         String globalPath="C:\\wamp64\\www\\AllForKids\\web\\image_evenement";
-        String globalPath2="C:\\Users\\Lauris\\Desktop\\3A18\\PIDEV\\Java\\AllForKids\\src\\imageEvenement";
+        String globalPath2="C:\\Users\\ASUS\\Desktop\\AllForKids\\src\\imageEvenement";
         String localPath="localhost:8080/";
        fileName = file.getName();
         fileName=fileName.replace(" ", "_");

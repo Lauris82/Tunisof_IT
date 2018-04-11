@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="843.0" prefWidth="1124.0" style="-fx-background-color: #333B47;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.HomeAdminController">
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="993.0" style="-fx-background-color: #333B47;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.HomeAdminController">
    <children>
-      <AnchorPane prefHeight="851.0" prefWidth="200.0">
+      <AnchorPane prefHeight="659.0" prefWidth="200.0">
          <children>
             <JFXButton fx:id="homeButton" alignment="CENTER" contentDisplay="TOP" onAction="#goToHome" prefHeight="136.0" prefWidth="200.0" style="-fx-background-color: #CDCDCD;" text="HOME">
                <graphic>
@@ -24,28 +24,28 @@
                   <Font size="34.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="clubButton" layoutY="283.0" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Clubs" textFill="#fcfafa">
+            <JFXButton fx:id="clubButton" layoutY="241.0" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Clubs" textFill="#fcfafa">
                <font>
                   <Font size="45.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="eventButton" layoutY="426.0" onAction="#showBackEvenement" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Evènements" textFill="#f2ecec">
+            <JFXButton fx:id="eventButton" layoutY="346.0" onAction="#showBackEvenement" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Evènements" textFill="#f2ecec">
                <font>
                   <Font size="30.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="offreButton" layoutY="572.0" onAction="#goToOffreTransport" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Offre Transport" textFill="#f5efef">
+            <JFXButton fx:id="offreButton" layoutY="451.0" onAction="#goToOffreTransport" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Offre Transport" textFill="#f5efef">
                <font>
                   <Font size="24.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="produitButton" layoutY="710.0" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Produits" textFill="#f8f6f6">
+            <JFXButton fx:id="produitButton" layoutY="556.0" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #31485E;" text="Produits" textFill="#f8f6f6">
                <font>
                   <Font size="39.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="contentMenu" layoutX="200.0" prefHeight="851.0" prefWidth="945.0" style="-fx-background-color: #CDCDCD;" />
+      <AnchorPane fx:id="contentMenu" layoutX="200.0" prefHeight="661.0" prefWidth="793.0" style="-fx-background-color: #CDCDCD;" />
    </children>
 </AnchorPane>
