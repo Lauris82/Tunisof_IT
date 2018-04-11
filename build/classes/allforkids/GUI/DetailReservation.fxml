@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="432.0" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.DetailReservationController">
+   <children>
+      <Label fx:id="descriptionLabel" layoutX="192.0" layoutY="200.0" text="---" textAlignment="CENTER" />
+      <Label fx:id="destinationLabel" layoutX="192.0" layoutY="259.0" text="---" />
+      <Label fx:id="dateDebutLabel" layoutX="191.0" layoutY="317.0" text="---" />
+      <Label fx:id="dateFinLabel" layoutX="191.0" layoutY="374.0" text="---" />
+      <Text layoutX="90.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+      <Text layoutX="90.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination:" />
+      <Text layoutX="90.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Fin:" />
+      <Text layoutX="91.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Debut: " />
+      <Text layoutX="92.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Places:" />
+      <Label fx:id="placeRestantLabel" layoutX="191.0" layoutY="434.0" text="---" />
+      <Label fx:id="userLabel" layoutX="191.0" layoutY="149.0" text="---" />
+      <Text layoutX="90.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offre de:" />
+      <ImageView fx:id="imageUser" fitHeight="126.0" fitWidth="178.0" layoutX="127.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="92.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix:" />
+      <Label fx:id="prixLabel" layoutX="192.0" layoutY="486.0" text="---" />
+      <Label fx:id="annulerReservationLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="120.0" layoutY="529.0" text="Annuler votre réservation">
+         <graphic>
+            <FontAwesomeIconView glyphName="CLOSE" size="25" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

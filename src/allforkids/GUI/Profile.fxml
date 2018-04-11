@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="691.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.ProfileController">
+   <children>
+      <AnchorPane layoutX="73.0" layoutY="20.0" prefHeight="691.0" prefWidth="721.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="88.0" layoutY="343.0" text="Role:" />
+            <Label layoutX="88.0" layoutY="402.0" text="Date Naissance:" />
+            <Label layoutX="137.0" layoutY="624.0" text="Adresse:" />
+            <Label fx:id="roleLabel" layoutX="223.0" layoutY="343.0" text="Label" />
+            <Label fx:id="birthdayLabel" layoutX="223.0" layoutY="402.0" text="Label" />
+            <Label fx:id="adresseLabel" layoutX="223.0" layoutY="624.0" text="Label" />
+            <Label layoutX="137.0" layoutY="523.0" text="Contact:" />
+            <Label fx:id="numeroLabel" layoutX="223.0" layoutY="523.0" text="Label" />
+            <Label layoutX="81.0" layoutY="462.0" text="Contact Info:" textFill="#dd5858" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="570.0" text="Email:" />
+            <Label fx:id="emailLabel" layoutX="223.0" layoutY="570.0" text="Label" />
+            <Label layoutX="50.0" layoutY="170.0" text="Infos Personnel:" textFill="#dd5858" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="287.0" text="Prénom:" />
+            <Label layoutX="90.0" layoutY="226.0" text="Nom:" />
+            <Label fx:id="prenomLabel" layoutX="223.0" layoutY="287.0" text="Label" />
+            <Label fx:id="nomLabel" layoutX="223.0" layoutY="226.0" text="Label" />
+            <Label fx:id="editProfileLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="578.0" layoutY="196.0" onMouseClicked="#goToEditProfileAction" text="Edit Profile" textFill="#dd5858">
+               <graphic>
+                  <FontAwesomeIconView fill="#dd5858" glyphName="PENCIL" size="20" />
+               </graphic>
+            </Label>
+            <Label fx:id="changePassLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="529.0" layoutY="247.0" onMouseClicked="#goToChangePassAction" text="Change Password" textFill="#dd5858">
+               <graphic>
+                  <FontAwesomeIconView fill="#dd5858" glyphName="KEY" size="20" />
+               </graphic>
+            </Label>
+            <ImageView fx:id="profilPicture" fitHeight="144.0" fitWidth="167.0" layoutX="254.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

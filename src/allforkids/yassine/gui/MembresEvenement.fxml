@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.HyperlinkLabel?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.MembresEvenementController">
+   <children>
+      <TableView fx:id="tableReservation" layoutX="245.0" layoutY="90.0" prefHeight="237.0" prefWidth="329.0">
+        <columns>
+            <TableColumn fx:id="image" prefWidth="75.0" text="Photo" />
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="dateR" prefWidth="100.0" text="Date reservation" />
+        </columns>
+      </TableView>
+      <Text fill="#150c35" layoutX="96.0" layoutY="60.0" strokeType="INSIDE" strokeWidth="0.0" text="Membres de l'èvénement" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT" size="40.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="retour" layoutX="28.0" layoutY="327.0" onAction="#retourDetailEvenement" prefHeight="54.0" prefWidth="145.0" text="   Retour" textFill="#150c35" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="29.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="195.0" text="Encore disponile " textFill="#0bc9e3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="96.0" text="Nombre du membres " textFill="#0bc9e3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HyperlinkLabel fx:id="nbrMembre" layoutX="84.0" layoutY="143.0" prefHeight="27.0" prefWidth="83.0" text="label" />
+      <HyperlinkLabel fx:id="dispo" layoutX="84.0" layoutY="244.0" prefHeight="27.0" prefWidth="83.0" text="label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yasmine.gui.HomeController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Pane prefHeight="559.0" prefWidth="204.0" style="-fx-background-color: #EBAF96;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" layoutX="63.0" layoutY="114.0" prefHeight="57.0" prefWidth="79.0" text="Club" textAlignment="CENTER" textFill="#fcf7f7">
+                     <font>
+                        <Font name="Gabriola" size="47.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="AjoutClubButton" layoutX="26.0" layoutY="204.0" mnemonicParsing="false" onAction="#goAjout" prefHeight="40.0" prefWidth="153.0" snapToPixel="false" style="-fx-background-color: #FEFDF0;" text="Ajouter" textFill="#6e5061">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="26.0" layoutY="260.0" mnemonicParsing="false" onAction="#goLister" prefHeight="34.0" prefWidth="153.0" style="-fx-background-color: #FEFDF0;" text="lister" textFill="#6e5061">
+                     <font>
+                        <Font name="Gabriola" size="20.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="6.0" layoutY="97.0" prefHeight="3.0" prefWidth="193.0" />
+                  <ImageView fx:id="imageLogo" fitHeight="100.0" fitWidth="153.0" layoutX="26.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+    <AnchorPane fx:id="zone" style="-fx-background-color: #FDF2E9;">
+         <children>
+            <ImageView fitHeight="559.0" fitWidth="486.0" opacity="0.67" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/logoClub.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

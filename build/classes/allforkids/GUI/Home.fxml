@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="864.0" prefWidth="721.0" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.HomeController">
+   <children>
+      <AnchorPane prefHeight="172.0" prefWidth="721.0" style="-fx-background-color: #cdcdcd;">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#actualizeHomeAction" prefHeight="74.0" prefWidth="100.0" style="-fx-background-color: #CDCDCD;" text="Accueil">
+               <graphic>
+                  <ImageView fitHeight="98.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/images/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fx:id="menuDown" fitHeight="40.0" fitWidth="49.0" layoutX="14.0" layoutY="125.0" onMouseClicked="#showMenuContentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/menu.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="131.0" layoutY="28.0" prefHeight="117.0" prefWidth="537.0" style="-fx-background-color: #CDCDCD;" text="Welcome To AllForKids">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menuAnchorPane" layoutY="172.0" prefHeight="691.0" prefWidth="202.0" style="-fx-background-color: #cdcdcd;">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="40.0" prefHeight="164.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="profilPicture" fitHeight="136.0" fitWidth="158.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="usernameLab" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="135.0" prefHeight="31.0" prefWidth="62.0" text="ok" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="notificationButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="36.0" layoutY="259.0" onAction="#goToNotificationAction" text="Notifications">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="notificationLabel" text="0">
+                     <font>
+                        <Font size="21.0" />
+                     </font></Label>
+               </graphic>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="BELL" layoutX="10.0" layoutY="287.0" size="25" />
+            <JFXButton fx:id="reservationButton" layoutX="36.0" layoutY="313.0" onAction="#goToReservationAction" text="Mes réservations">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="BOOKMARK" layoutX="13.0" layoutY="341.0" size="25" />
+            <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="9.0" layoutY="394.0" size="25" />
+            <JFXButton fx:id="reclamationButton" layoutX="37.0" layoutY="366.0" text="Réclamations">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="COGS" layoutX="9.0" layoutY="449.0" size="25" />
+            <JFXButton fx:id="parametreButton" layoutX="37.0" layoutY="421.0" text="Paramètres">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="SIGN_OUT" layoutX="11.0" layoutY="497.0" size="25" />
+            <JFXButton fx:id="logoutButton" layoutX="37.0" layoutY="469.0" onAction="#logoutAction" text="Deconnexion">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="39.0" layoutY="566.0" text="ABOUT US" />
+            <JFXButton layoutX="39.0" layoutY="516.0" text="CONTACT US" />
+            <FontAwesomeIconView glyphName="INFO_CIRCLE" layoutX="13.0" layoutY="591.0" size="25" />
+            <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="11.0" layoutY="540.0" size="25" />
+            <Label layoutX="31.0" layoutY="656.0" text="Tunisoft_It © 2018" />
+            <ImageView fx:id="menuUp" fitHeight="40.0" fitWidth="40.0" layoutX="15.0" onMouseClicked="#hideMenuContentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/Drag_List_Up.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView glyphName="USER" layoutX="15.0" layoutY="238.0" size="25" />
+            <JFXButton fx:id="profileButton" layoutX="40.0" layoutY="210.0" onAction="#goToProfileAction" text="Profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homeContent" layoutY="172.0" prefHeight="691.0" prefWidth="721.0" style="-fx-background-color: #cdcd;" />
+   </children>
+</AnchorPane>

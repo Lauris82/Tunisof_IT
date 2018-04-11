@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="691.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.TypeHomeController">
+   <children>
+      <AnchorPane fx:id="garderieAnchorPane" layoutX="26.0" layoutY="64.0" onMouseClicked="#goToGarderie" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/garderie.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Garderies" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="associationAnchorPane" layoutX="261.0" layoutY="64.0" onMouseClicked="#goToAssociation" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="31.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/Meeting.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Associations" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="transportAnchorPane" layoutX="500.0" layoutY="436.0" onMouseClicked="#goToOffreTransport" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/voiture.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Offre Transport" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="clubAnchorPane" layoutX="500.0" layoutY="64.0" onMouseClicked="#goToClub" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/club.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Clubs" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="produitAnchorPane" layoutX="26.0" layoutY="436.0" onMouseClicked="#goToProduit" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/brick.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Produits" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="eventAnchorPane" layoutX="261.0" layoutY="436.0" onMouseClicked="#goToEvenement" prefHeight="192.0" prefWidth="192.0" styleClass="anchorPane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="139.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/event.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="134.0" prefHeight="38.0" prefWidth="139.0" text="Evènements" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../ressources/css/login.css" />
+      <URL value="@../ressources/css/Home.css" />
+   </stylesheets>
+</AnchorPane>

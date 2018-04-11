@@ -1,0 +1,37 @@
+/**
+* @Project: AllForKids
+* @Classe: Home
+* @Date: 7 avr. 2018
+* @Time: 03:31:32
+*
+* @author Lauris
+*/
+
+
+.anchorPane{
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #CDCDCD 0%, #757272 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #CDCDCD, #DE7F21);
+    -fx-background-radius : 30;
+    -fx-border-radius : 30;  
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-font-weight: bold;
+    -fx-padding: 8 15 15 15;
+}
+
+.anchorPane:hover{
+    -fx-background-color: #CDCDCD;  
+    -fx-border-widht : 30;   
+    -fx-rotate: 4;
+}
+
+
+
+
+
+/**
+*@Lau82 © 2018
+*/
+

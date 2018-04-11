@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yassine.gui.ListEvenementController">
+   <children>
+      <TableView fx:id="table" layoutX="71.0" layoutY="107.0" prefHeight="279.0" prefWidth="354.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="150.0" text="Nom" />
+          <TableColumn fx:id="Emplacement" prefWidth="100.0" text="Emplacement" />
+            <TableColumn fx:id="dateDebut" prefWidth="100.0" text="Date debut" />
+        </columns>
+      </TableView>
+      <Label graphicTextGap="20.0" layoutX="137.0" layoutY="13.0" text="Liste des evenements" textAlignment="CENTER" textFill="#150c35">
+         <font>
+            <Font name="Bodoni MT" size="35.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="recherche" focusColor="#3a9ed0" layoutX="240.0" layoutY="56.0" prefHeight="39.0" prefWidth="144.0" promptText="Recherche" unFocusColor="#3a9ed0" />
+      <ImageView fitHeight="50.0" fitWidth="39.0" layoutX="355.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_Recherche.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="455.0" layoutY="300.0" onAction="#ajouterEvenement" prefHeight="64.0" prefWidth="122.0" text="         Ajouter" textFill="#3a9ed0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="43.0" fitWidth="51.0" layoutX="469.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/img_addcovo.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="467.0" layoutY="175.0" onAction="#afficheDetailEvenement" style="-fx-background-color: #4af1e6;" text="Afficher dètail" textFill="#43302d" />
+      <JFXComboBox fx:id="type" focusColor="#3a9ed0" layoutX="102.0" layoutY="56.0" prefHeight="39.0" prefWidth="129.0" promptText="Type" unFocusColor="#3a9ed0" />
+      <JFXButton layoutX="451.0" layoutY="63.0" onAction="#VoirCalendrier" prefHeight="43.0" prefWidth="144.0" text="      Voir calendrier" textFill="#3a9ed0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="444.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/calendrier.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="CENTER" contentDisplay="TOP" onAction="#goToHome" prefHeight="64.0" prefWidth="69.0" style="-fx-background-color: #CDCDCD;" text="Accueil">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../ressources/images/logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

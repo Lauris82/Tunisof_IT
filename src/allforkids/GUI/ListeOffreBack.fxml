@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#showChoicesPane" prefHeight="851.0" prefWidth="941.0" styleClass="root" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.ListeOffreBackController">
+   <children>
+      <TableView fx:id="listeOffreTable" layoutX="83.0" layoutY="81.0" prefHeight="731.0" prefWidth="751.0">
+         <columns>
+            <TableColumn fx:id="descriptionColumn" minWidth="300.0" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="destinationColumn" minWidth="200.0" prefWidth="75.0" text="Destination" />
+            <TableColumn fx:id="dateColumn" minWidth="150.0" prefWidth="75.0" text="Date Debut" />
+            <TableColumn fx:id="detailColumn" minWidth="100.0" prefWidth="75.0" text="Details" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <FontAwesomeIconView fx:id="searchButton" glyphName="SEARCH" layoutX="485.0" layoutY="54.0" onMouseClicked="#searchOffreAction" size="25" />
+      <JFXTextField fx:id="searchOffre" layoutX="145.0" layoutY="26.0" prefHeight="39.0" prefWidth="329.0" promptText="Search Offre by destination" styleClass="text-field" />
+      <ImageView fitHeight="32.0" fitWidth="62.0" layoutX="571.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/images/Multiple_Choice.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="choixAnchorPane" layoutX="603.0" layoutY="33.0" prefHeight="378.0" prefWidth="289.0" style="-fx-background-color: #DEDEDE;" styleClass="pane">
+         <children>
+            <JFXComboBox fx:id="choix" layoutX="64.0" layoutY="13.0" prefHeight="31.0" prefWidth="202.0" promptText="Choix de recherche" styleClass="text-field" />
+            <FontAwesomeIconView glyphName="LIST_OL" layoutX="21.0" layoutY="44.0" size="30" text="" />
+            <JFXDatePicker fx:id="dateDebutPicker" layoutX="26.0" layoutY="86.0" promptText="Date de debut" />
+            <JFXDatePicker fx:id="dateFinPicker" layoutX="26.0" layoutY="156.0" promptText="Date de debut" />
+            <JFXTextField fx:id="prixTextfield" layoutX="26.0" layoutY="234.0" prefHeight="39.0" prefWidth="208.0" promptText="Prix" />
+            <JFXButton fx:id="validerButton" layoutX="67.0" layoutY="312.0" onAction="#validerChoixAction" prefHeight="45.0" prefWidth="155.0" styleClass="login-button" text="Valider" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

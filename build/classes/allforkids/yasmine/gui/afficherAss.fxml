@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.yasmine.gui.AfficherAssController">
+   <children>
+      <Label layoutX="157.0" layoutY="58.0" text="nom Association" />
+      <Label layoutX="118.0" layoutY="100.0" text="Description Association" />
+      <Label layoutX="187.0" layoutY="142.0" text="Num Tel°" />
+      <Label layoutX="180.0" layoutY="194.0" text="gouvernerat" />
+      <Label fx:id="nomA" layoutX="328.0" layoutY="58.0" prefHeight="17.0" prefWidth="118.0" text="Label" />
+      <Label fx:id="descA" layoutX="328.0" layoutY="100.0" text="Label" />
+      <Label fx:id="telA" layoutX="328.0" layoutY="142.0" text="Label" />
+      <Label fx:id="gouvA" layoutX="328.0" layoutY="194.0" text="Label" />
+   </children>
+</AnchorPane>

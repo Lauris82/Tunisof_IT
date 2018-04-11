@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="420.0" styleClass="root" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.ChangePassController">
+   <children>
+      <JFXButton prefHeight="46.0" prefWidth="432.0" style="-fx-background-color: #CDCDCD;" text="Changer le Mot de Passe">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="password" focusColor="#de7f21" layoutX="132.0" layoutY="175.0" promptText="New Password" styleClass="text-field" unFocusColor="#757272" />
+      <JFXPasswordField fx:id="rpassword" focusColor="#de7f21" layoutX="132.0" layoutY="277.0" promptText="Repeat New Password" styleClass="text-field" unFocusColor="#757272" />
+      <JFXButton fx:id="saveButton" layoutX="111.0" layoutY="378.0" onAction="#changePassword" styleClass="login-button" text="Sauvegarder" />
+      <JFXButton fx:id="annulerButton" layoutX="247.0" layoutY="378.0" onAction="#annulerAction" styleClass="login-button" text="Annuler" />
+      <JFXPasswordField fx:id="currentPass" focusColor="#de7f21" layoutX="132.0" layoutY="84.0" promptText="Current Password" styleClass="text-field" unFocusColor="#757272" />
+   </children>
+</AnchorPane>

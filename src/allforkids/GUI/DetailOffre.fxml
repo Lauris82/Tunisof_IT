@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="626.0" prefWidth="432.0" styleClass="root" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.DetailOffreController">
+   <children>
+      <Label fx:id="descriptionLabel" layoutX="161.0" layoutY="208.0" text="---" textAlignment="CENTER" />
+      <Label fx:id="destinationLabel" layoutX="161.0" layoutY="267.0" text="---" />
+      <Label fx:id="dateDebutLabel" layoutX="160.0" layoutY="325.0" text="---" />
+      <Label fx:id="dateFinLabel" layoutX="160.0" layoutY="382.0" text="---" />
+      <Text layoutX="59.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" />
+      <Text layoutX="59.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination:" />
+      <Text layoutX="59.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Fin:" />
+      <Text layoutX="60.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Debut: " />
+      <Text layoutX="61.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Places:" />
+      <Label fx:id="placeRestantLabel" layoutX="160.0" layoutY="442.0" text="---" />
+      <JFXButton fx:id="modifierButton" layoutX="75.0" layoutY="542.0" onAction="#goToModifierAction" styleClass="login-button" text="Modifier" />
+      <JFXButton fx:id="reserverButton" layoutX="170.0" layoutY="542.0" onAction="#reserverOffreAction" styleClass="login-button" text="Réserver" />
+      <JFXButton fx:id="supprimerButton" layoutX="266.0" layoutY="542.0" onAction="#supprimerOffreAction" styleClass="login-button" text="Supprimer" />
+      <Label fx:id="userLabel" layoutX="160.0" layoutY="157.0" text="---" />
+      <Text layoutX="59.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offre de:" />
+      <ImageView fx:id="imageUser" fitHeight="126.0" fitWidth="178.0" layoutX="127.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="61.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix:" />
+      <Label fx:id="prixLabel" layoutX="161.0" layoutY="494.0" text="---" />
+      <Label fx:id="annulerReservationLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="120.0" layoutY="587.0" onMouseClicked="#annulerReservationAction" text="Annuler votre réservation">
+         <graphic>
+            <FontAwesomeIconView glyphName="CLOSE" size="25" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

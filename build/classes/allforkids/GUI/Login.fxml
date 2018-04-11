@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="735.0" prefWidth="1043.0" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.LoginController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="735.0" fitWidth="1043.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="583.0" layoutY="45.0" opacity="0.85" prefHeight="645.0" prefWidth="432.0" style="-fx-background-color: #DEDEDE;" styleClass="pane">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="254.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username" focusColor="#de7f21" layoutX="135.0" layoutY="227.0" promptText="Username" styleClass="text-field" unFocusColor="#757272" />
+            <JFXPasswordField fx:id="password" focusColor="#de7f21" layoutX="135.0" layoutY="323.0" promptText="Password" styleClass="text-field" unFocusColor="#757272" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="195.0" layoutY="202.0" size="60" />
+            <FontAwesomeIconView glyphName="USER" layoutX="95.0" layoutY="261.0" size="30" />
+            <FontAwesomeIconView glyphName="KEY" layoutX="91.0" layoutY="353.0" size="30" />
+            <JFXButton fx:id="loginButton" layoutX="76.0" layoutY="416.0" onAction="#loginAction" prefHeight="47.0" prefWidth="110.0" styleClass="login-button" text="Login" />
+            <JFXButton fx:id="cancelButton" layoutX="252.0" layoutY="416.0" onAction="#closeAction" prefHeight="47.0" prefWidth="101.0" styleClass="login-button" text="Close" />
+            <JFXProgressBar fx:id="progressBar" layoutX="113.0" layoutY="613.0" prefHeight="11.0" prefWidth="206.0" />
+            <FontAwesomeIconView fx:id="registerIcon" glyphName="USER_PLUS" layoutX="383.0" layoutY="50.0" onMouseClicked="#goToRegisterAction" size="30" />
+            <Label layoutX="265.0" layoutY="26.0" styleClass="text-field" text="Inscrivez-vous" underline="true" />
+            <JFXButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="126.0" layoutY="494.0" onAction="#connectionFacebookAction" prefHeight="39.0" prefWidth="177.0" styleClass="facebook-button" text="Login Facebook">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ressources/images/Facebook.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="forgetPasswordLabel" contentDisplay="CENTER" layoutX="141.0" layoutY="569.0" onMouseClicked="#goToForgetPassword" text="Mot de passe oublié ?" textAlignment="CENTER" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

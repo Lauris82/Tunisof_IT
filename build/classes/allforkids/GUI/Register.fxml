@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="793.0" prefWidth="801.0" styleClass="root" stylesheets="@../ressources/css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allforkids.controllers.RegisterController">
+   <children>
+      <ImageView fitHeight="133.0" fitWidth="254.0" layoutX="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/images/logo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="email" focusColor="#de7f21" layoutX="117.0" layoutY="215.0" onKeyReleased="#colorEmail" promptText="Email" styleClass="text-field" unFocusColor="#757272" />
+      <JFXPasswordField fx:id="password" focusColor="#de7f21" layoutX="117.0" layoutY="292.0" promptText="Password" styleClass="text-field" unFocusColor="#757272" />
+      <FontAwesomeIconView glyphName="ENVELOPE" layoutX="70.0" layoutY="250.0" size="30" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="70.0" layoutY="326.0" size="30" />
+      <JFXButton fx:id="registerButton" layoutX="222.0" layoutY="693.0" onAction="#resgiterAction" prefHeight="47.0" prefWidth="110.0" styleClass="login-button" text="Register" />
+      <FontAwesomeIconView glyphName="USER_PLUS" layoutX="158.0" layoutY="184.0" size="60" text="CREATE ACCOUNT" />
+      <Label layoutX="327.0" layoutY="752.0" styleClass="text-field" text="Tunisoft_It © 2018" />
+      <FontAwesomeIconView glyphName="USER" layoutX="456.0" layoutY="250.0" size="30" />
+      <JFXPasswordField fx:id="rpassword" focusColor="#de7f21" layoutX="494.0" layoutY="292.0" onKeyReleased="#checkPass" promptText="Repeat Password" styleClass="text-field" unFocusColor="#757272" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="452.0" layoutY="326.0" size="30" />
+      <JFXComboBox fx:id="roles" layoutX="117.0" layoutY="371.0" prefHeight="31.0" prefWidth="202.0" promptText="Roles" styleClass="text-field" />
+      <FontAwesomeIconView glyphName="LIST_OL" layoutX="70.0" layoutY="405.0" size="30" />
+      <JFXDatePicker fx:id="birthday" layoutX="494.0" layoutY="371.0" prefHeight="39.0" prefWidth="202.0" promptText="Birthday" styleClass="text-field" />
+      <FontAwesomeIconView glyphName="CALENDAR" layoutX="453.0" layoutY="405.0" size="30" />
+      <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" layoutX="70.0" layoutY="485.0" size="30" />
+      <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" layoutX="452.0" layoutY="485.0" size="30" text="" />
+      <FontAwesomeIconView glyphName="ADDRESS_CARD" layoutX="68.0" layoutY="564.0" size="30" />
+      <FontAwesomeIconView glyphName="PHOTO" layoutX="450.0" layoutY="564.0" size="30" />
+      <JFXTextField fx:id="username" focusColor="#de7f21" layoutX="496.0" layoutY="215.0" onKeyReleased="#colorUsername" promptText="Username" styleClass="text-field" unFocusColor="#757272" />
+      <JFXTextField fx:id="nom" focusColor="#de7f21" layoutX="117.0" layoutY="449.0" promptText="Last Name" styleClass="text-field" unFocusColor="#757272" />
+      <JFXTextField fx:id="addresse" focusColor="#de7f21" layoutX="117.0" layoutY="528.0" promptText="Address" styleClass="text-field" unFocusColor="#757272" />
+      <JFXTextField fx:id="prenom" focusColor="#de7f21" layoutX="494.0" layoutY="449.0" promptText="First Name" styleClass="text-field" unFocusColor="#757272" />
+      <JFXButton fx:id="loginButton" layoutX="456.0" layoutY="693.0" onAction="#goToLoginAction" prefHeight="47.0" prefWidth="110.0" styleClass="login-button" text="Login" />
+      <Button fx:id="imageButton" layoutX="496.0" layoutY="538.0" mnemonicParsing="false" onAction="#chooseFileAction" prefHeight="27.0" prefWidth="202.0" text="Choose image" />
+      <Label fx:id="labImage" layoutX="496.0" layoutY="575.0" prefHeight="30.0" prefWidth="202.0" />
+      <JFXTextField fx:id="contact" focusColor="#de7f21" layoutX="293.0" layoutY="605.0" onKeyReleased="#numberOnly" promptText="Contact" styleClass="text-field" unFocusColor="#757272" />
+      <FontAwesomeIconView glyphName="ADDRESS_CARD" layoutX="239.0" layoutY="635.0" size="30" />
+   </children>
+</AnchorPane>
